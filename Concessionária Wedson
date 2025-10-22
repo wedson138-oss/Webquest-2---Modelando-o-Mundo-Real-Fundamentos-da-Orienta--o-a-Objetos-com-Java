@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Concessionaria {
+    public static void main(String[] args) {
+        List<Veiculo> veiculos = new ArrayList<>();
+
+        veiculos.add(new Carro("QWE-4321", "Chevrolet", "Onix Plus", 2022, 89000, 4));
+        veiculos.add(new Carro("RTY-8765", "Volkswagen", "Virtus", 2023, 102000, 4));
+        veiculos.add(new Carro("UIO-1098", "Renault", "Kwid", 2021, 58000, 4));
+        veiculos.add(new Moto("PAS-3344", "Suzuki", "GSX-R750", 2023, 45000, 750));
+        veiculos.add(new Moto("DFG-6677", "Kawasaki", "Ninja 400", 2022, 39000, 400));
+        veiculos.add(new Caminhao("HJK-9900", "Mercedes-Benz", "Actros 2651", 2024, 520000, 12.8));
+
+        System.out.println("=== Veículos da Concessionária ===");
+        for (Veiculo v : veiculos) {
+            v.exibirInformacoes();
+        }
+    }
+}
